@@ -24,7 +24,47 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
-
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: 1;
+		display: none;
+	  }
+	  
+	  .popup {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 90%;
+		max-height: 90%;
+		overflow: auto;
+		background-color: white;
+		padding: 20px;
+		border-radius: 5px;
+	  }
+	  
+	  .close {
+		position: absolute;
+		top: 25px;
+		right: 0px;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: white;
+	  }
+	  
+	  .close:hover,
+	  .close:focus {
+		color: #999;
+		text-decoration: none;
+		cursor: pointer;
+	  }
+	  
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -953,10 +993,13 @@ input, select, textarea {
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 18px;
 						}
-
+						
+						  
 				.row {
 					margin-top: -36px;
 					margin-left: -36px;
+					height: 800px;
+					  
 				}
 
 					.row > * {
