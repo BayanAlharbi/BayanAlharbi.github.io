@@ -7,6 +7,32 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.popup-content {
+	display: none;
+  }
+ 
+@media (max-width: 768px) {
+	.wrapper.style1, .wrapper.style2{
+	  overflow: hidden;
+	  height: auto;
+	  overflow-y: scroll;
+  
+	}
+  }
+
+  @media (max-width: 768px) {
+	.fixed-height {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	.fixed-height article {
+	  width: 100%;
+	}
+  }
+  #footer {
+    height: 250px; /* Change this value to adjust the height */
+}
+  
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1816,7 +1842,7 @@ input, select, textarea {
 		}
 
 	footer {
-		margin: 2.5em 0 0 0;
+		margin: 0.5em 0 0 0;
 	}
 
 /* Image */
@@ -2286,7 +2312,7 @@ input, select, textarea {
 			}
 
 		#header footer {
-			margin: 1em 0 0 0;
+			margin: 0.5em 0 0 0;
 		}
 
 	body.homepage #header {
@@ -2502,7 +2528,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 0.5em 0 0.5em 0;
 		background: #2b252c;
 		color: #fff;
 	}
@@ -2527,7 +2553,7 @@ input, select, textarea {
 
 			#footer .contact p {
 				text-align: center;
-				margin: 0 0 3em 0;
+				margin: 0 0 0.5em 0;
 			}
 
 		#footer .copyright {
@@ -2760,7 +2786,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 4em 2em 4em 2em;
+				padding: 0.5em 0.5em 0.5em 0.5em;
 			}
 
 		/* Carousel */
